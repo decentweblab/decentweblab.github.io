@@ -84,19 +84,18 @@ html {
 .card .img-top{ left: 26px;}
 .banner-img{margin-bottom:-47px; width:100%;}
 .man-right-contact{ width:200px; display:none}
-.contact-section{ background:#fff;}
 
 }
 @media (max-width: 991px) {
 .about-bg{ height:100% !important}
  .img2{ padding-bottom:25px;}
- .navbar-light .navbar-toggler{ margin-right:10px;}
+ .navbar-light .navbar-toggler{     margin-right: -161px;
+    margin-top: 1px;}
 .navbar-expand-lg .navbar-nav .nav-link{ color:#ddd;}
 .get-a-quote-btn{ padding:10px 5px;}
 .picture-overlay { display:none}
 .service-box .card h2{ font-size:18px;}
 .card .img-top{ left:1px;}
-.contact-section { background:#fff}
 .man-right-contact{ display:none}
 .banner-img{margin-bottom:-566px; width:100%;}
  }
@@ -104,6 +103,47 @@ html {
 @media (max-width: 767px) {
 .pxm{
     padding:1.2rem 0;
+}
+.btnbin a {
+    display: none;
+}
+.mobile_button {
+    display: block;
+}
+.mobile_button ul {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.mobile_button ul li {
+        float: left;
+    display: inline-block;
+    background: #43b9f3;
+    width: 33.3%;
+    text-align: center;
+    margin: auto;
+    box-shadow: -1px 2px 5px 0px rgb(41 41 41 / 75%);
+}
+.mob-email {
+    background: #ec2f41 !important;
+}
+.mob-whatsapp {
+    background: #25d366 !important;
+}
+.mobile_button ul li a {
+    line-height: 1.8;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+}
+.logo-here img {
+    width: 100px;
+}
+.carousel img {
+    height: auto;
+}
+.About_content .line img {
+    margin: 10px auto;
+    display: block;
 }
 .OHAI_Banner {
     background-size: 100% 89% !important;
@@ -148,6 +188,7 @@ html {
 }
 .coppyright p{
     text-align: center;
+    font-size: 16px;
 }
 .footer {
     padding-top:2rem !important;
@@ -162,8 +203,8 @@ html {
 
 .wraperAbouts .picture-overlay{ display:none}
 .man-right-contact{ display:none}
-.contact-section{ background:#fff;}
 .header-top{ display:none}.white-nav{ margin-top:0px;}
+}
 
 @media (max-width: 540px) {
 .contentBnanner h1 {
@@ -173,7 +214,12 @@ html {
     margin-top: 3rem;
 }
 .About_content h2 {
-    font-size: 1.5rem;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0px;
+}
+#filters {
+    margin-bottom: 15px;
 }
 .titlehead h2 {
     font-size: 2rem;
@@ -200,9 +246,37 @@ html {
 .testimonials p{ text-align:center; font-size:14px;}
 .moreBox{ padding:0px 20px; text-align:center}
 .banner-img{margin-bottom:-14px; width:100%;}
-.logo-footer{ width:100%} 
-.carousel-caption{ display:block}
+.logo-footer{     width: 50%;
+    margin-bottom: 15px;} 
+    .footernav li a {
+    font-size: 16px;
+}
+.carousel-caption{ display: block !important;}
+#contact-form {
+    padding: 18px 0px;
+}
+.form-conta .form-control {
+    padding: 15px 15px;
+        font-size: 15px;
+}
+.Title-social li {
+    font-size: 15px;
+}
+.carousel-caption {
+    width: 91%;
+    top: 0%;
+    left: 4%;
+    padding: 10px;
+}
+.ban-head {
+        font-size: 14px;
+
  }
+ .banner-con li i {
+    color: #01caf9;
+    font-size: 14px;
+}
+}
 
 @media (max-width: 414px) {
 .card .img-top {
