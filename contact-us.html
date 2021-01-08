@@ -36,126 +36,106 @@
 </style>
 </head>
 <body>
-<div id="home">
-<div class="header-top">
-  <div class="container">
-            <div class="row">
-              <div class="col-md-10 no-gutters">
-               
-               <div class="location"> 
-                <div class="icon"> <i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                <div class="text">Kolkata, India</div>
-               </div>
-               
-                <div class="phone"> 
-                <div class="icon"> <i class="fa fa-phone" aria-hidden="true"></i></div>
-                <div class="text"> +91 9477291869</div>
-               </div> 
-               
-               <div class="location"> 
-                <div class="icon"> <i class="fa fa-envelope" aria-hidden="true"></i></div>
-                <div class="text">decentweblab@gmail.com</div>
-               </div>
-                <div class="location"> 
-                <div class="icon"> <i class="fa fa-envelope" aria-hidden="true"></i></div>
-                <div class="text">9734745440</div>
-               </div>
-                </div>
-                
-              <div class="col-md-2">
-              <div class="get-a-quote-btn-area">
-                <a href="#" class="get-a-quote-btn">Get A Quote</a>
-                </div>
-              </div>
-              
-              
-              
-            </div><!--End row-->
-  </div>
-</div>
 
 
- <nav class="navbar navbar-expand-lg navbar-light white-nav">
-  <div class="container ">
-  
-  
-    <div class="logo-here">
-    <a href="index.html">
-      <img src="images/logo.png" alt="img" class="img-fluid">
-    </a>
-    </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
-           <li class="nav-item"><a class="nav-link" href="#why-choose-us">Why Choose Us</a></li>          
-           <li class="nav-item"><a class="nav-link" href="#services">Services </a></li>         
-           <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio </a></li>          
-           <li class="nav-item"><a class="nav-link" href="#contact-us">Contact </a></li>
-           
-        </ul>
-     </div>
- </div><!--End container-->
-  
-</nav><!--end nabver-->
 
 
-</div>
 
-<section class="wraperAbouts" id="why-choose-us">
+
+<section class="contact-section pxm" id="contact-us">
+<div class="man-right-contact"></div>
   <div class="container">
     <div class="row">
     
     
-     <div class="col-md-6">
-        <div class="picture wow bounceInUp"  data-wow-duration="1s">
-       <img src="images/about-bg2.png" class="img-fluid">
-       <img src="images/about-bg1.png" class="picture-overlay img">
-       </div>
-       
-      </div>
-      
-       <div class="col-md-6">
-       <div class="About_content  wow bounceInUp"  data-wow-duration="1s">
-          <h2><span>About </span>Us</h2>
-         <div class="line"><img src="images/line.png"></div>
-         <p>With a reputation of on time delivery, we find it important that the clock does not tick to tick you off. Now, what makes us the best website design company in Kolkata? We recruit personnel after a series of screening process to hunt the brightest of creative minds. It is not the jack of all trades who makes a lasting impact but the experts on ground. <br><br>
-Quality matters and we understand that. Sit back and leave the job to us.:
- </p>
-      
-         
-<div class="row">
+    
+     </div>
+     <div class="contact-body">
 
-<div class="col-md-12">
-<div class="about-bulet-section wow bounceInUp"  data-wow-duration="1s">
-<ul>
- <li>We save your time and money  </li>                         
-<li>We will be your support system</li> 
-<li>Guess what? We are pocket friendly</li>
- </ul>
- </div> </div>
- 
- <p class="wow bounceInUp"  data-wow-duration="2s">We believe in unconditional convincing that helps you see through our fair and honest efforts. Check out our services on creative design and web development. Try our 12 month free technical support and experience the difference!</p>
- 
+      <div class="row">
+        <div class="col-md-8">
+<h2>Get in Touch</h2>
+             <form id="contact-form" method="post" action="php/email.php" role="form">
+      <div class="form-conta">
+    
+        <div class="col-sm-12 col-mg-12 col-lg-12">
+                <div class="form-group">
+                      <input id="name" type="text" name="name" class="form-control" placeholder="Name" required>                
+                    </div>
+                   <div class="form-group">
+                        <input id="email" type="email" name="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="form-group">
+                        <input id="phone" type="text" name="phone" class="form-control" placeholder="Phone" minlength="10" maxlength="12" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                </div>
+                 <div class="form-group">
+                        <input id="location" type="text" name="location" class="form-control" placeholder="Location" required>
+                </div>
+                   <textarea name="message" id="message" class="form-control" cols="45" rows="3" placeholder="Message" required></textarea>
+             </div>
+
+<div class="col-sm-12 col-lg-12 text-center">
+  <div class="form-group-two">
+      <input name="pop_up" value="1" type="hidden">
+      <button type="submit" class="btn sub-btn">Submit</button>
+   
+  </div>
 </div>
 
+      </div>
+    </form>
+        </div>
+        <div class="col-md-4">
+          <h2>Contact Us</h2>
+          <div class="address-p">
+            <ul class="list-unstyled mb-0">
 
-         </div>
-       </div>
-       
-      
-      
-     </div><!--End row-->
-  </div><!--end container-->
-</section><!--End wraperAbouts-->
+                <li><i class="fas fa-phone mt-4 fa-2x" aria-hidden="true"> <span>Mobile </span></i>
+                    <p>+91 9477291869</p>
+                </li>
 
-
-
-
-
-
+                <li><i class="fas fa-envelope mt-4 fa-2x" aria-hidden="true"> <span> Email </span></i>
+                    <p>decentweblab@gmail.com</p>
+                </li>
+                <li><i class="fab fa-whatsapp mt-4 fa-2x"> <span> Whatsapp </span></i> 
+                    <p>9734745440</p>
+                </li>
+            </ul>
+          </div>
+          <div class="contact-social">
+            <ul class="icons">
+<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+<li><a href="#"><span class="fab fa-twitter"></span></a></li>
+<li><a href="#"><span class="fab fa-instagram"></span></a></li>
+<li><a href="#"><span class="fab fa-github"></span></a></li>
+<li><a href="#"><span class="fab fa-youtube"></span></a></li>
+</ul>
+          </div>
+        </div>
+      </div>
+     </div>
+     
+    </div>
+</section><!--End gallery -->
+<section class="client-logo-section-2">
+  <div class="title text-center">
+    <h2> Our Clients </h2>
+     <div class="line" align="center"><img src="images/line.png"></div>
+    
+   </div>
+  <div class="container">
+      <div class="customer-logos slider">
+      <div class="slide"><img src="images/client-logo-2.jpg"></div>
+      <div class="slide"><img src="images/client-logo-2.jpg"></div>
+      <div class="slide"><img src="images/client-logo-2.jpg"></div>
+      <div class="slide"><img src="images/client-logo-2.jpg"></div>
+      <div class="slide"><img src="images/client-logo-2.jpg"></div>
+      <div class="slide"><img src="images/client-logo-2.jpg"></div>
+      <div class="slide"><img src="images/client-logo-2.jpg"></div>
+   </div>
+  </div>
+</section>
+ 
  <footer class="footer">
   <div class="container">
     <div class="row">
