@@ -458,8 +458,10 @@ cursor: pointer;
     border-radius: 3px;
 }
 .top-header {
-      z-index: 9;
+        z-index: 9;
     background: #515ff9;
+    width: 100%;
+    float: left;
 }
   .whu-img {
     position: relative;
@@ -939,7 +941,7 @@ cursor: pointer;
 footer {
     width: 100%;
     float: left;
-    background-image: url(../images/footer.bg.jpg);
+    background-image: url(footer.bg.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
