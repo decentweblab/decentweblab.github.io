@@ -54,6 +54,8 @@ ul {
         background-size: contain;
     background-position: center;
     position: relative;
+    width: 100%;
+    float: left;
 }
 .inner-banner:before {
     content: '';
