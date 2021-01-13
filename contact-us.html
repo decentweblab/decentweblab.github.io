@@ -63,7 +63,7 @@
           <div class="col-md-6">
                 <div class="sec2contactform">
             <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
-             <form action="http://formspree.io/decentweblab@gmail.com" method="post">
+             <form action="http://formspree.io/decentweblab@gmail.com" method="post" id="contact_form">
               <div class="clearfix">
                 <input class="col2 first" type="text" placeholder="Name" name="name">
                 <input  class="col2 last" type="Email" placeholder="Email" name="_replyto">
@@ -317,6 +317,14 @@ $(selector).on('click', function(){
             }
         }]
     });
+});
+  </script>
+  <script type="text/javascript">
+    $.ajax({
+    url: "https://formspree.io/FORM_ID",
+    method: "POST",
+    data: {message: "hello!"},
+    dataType: "json"
 });
   </script>
 </body>
