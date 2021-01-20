@@ -68,6 +68,12 @@ ul {
     top: 0;
     background: linear-gradient(-225deg,rgba(5, 1, 25, 0.7) 10%,rgba(0, 0, 0, 0.3) 100%);
 }
+.ab-content {
+    text-align: center;
+    background: #515ff9;
+    padding: 25px;
+    color: #fff;
+}
 .inner-content-body {
     position: relative;
 }

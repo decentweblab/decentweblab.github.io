@@ -125,4 +125,10 @@ width: auto;
 .footer-introduction img {
     width: 80%;
 }
+.ab-content h1 {
+        font-size: 18px;
+}
+.ab-content {
+    padding: 12px;
+}
 }
