@@ -581,7 +581,14 @@ cursor: pointer;
 .screen .furniture-pfm {
   bottom: -1180px;
 }
-
+.screen .wellwisherorganics {
+      bottom: -800px;
+}
+.single_port {
+      margin-bottom: 25px;
+    float: left;
+    width: 100%;
+}
 .portfolio {
   width: 100%;
     float: left;

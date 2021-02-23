@@ -63,19 +63,19 @@
           <div class="col-md-6">
                 <div class="sec2contactform">
             <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
-             <form action="http://formspree.io/decentweblab@gmail.com" method="post" id="contact_form">
+             <form name="contact" method="post" id="contact_form">
               <div class="clearfix">
                 <input class="col2 first" type="text" placeholder="Name" name="name">
                 <input  class="col2 last" type="Email" placeholder="Email" name="_replyto">
               </div>
               <div class="clearfix">
                 
-                <input type="text" placeholder="Contact Number" name="no">
+                <input type="text" placeholder="Contact Number" name="phone">
               </div>
               <div class="clearfix">
                 <textarea name="textarea" id="" cols="30" rows="7" name="message">Your message here...</textarea>
               </div>
-              <div class="clearfix"><input type="submit" value="Send"></div>
+              <div class="clearfix"><input type="submit" name="send" value="Send"></div>
             </form>
           </div>
           </div>
@@ -107,7 +107,7 @@
       <div class="slide"><img src="client-1.png" title="Kapoor Commodities Exim Pvt. Ltd" alt="Kapoor Commodities Exim Pvt. Ltd"></div>
        <div class="slide"><img src="client-2.png" title="DIGITALOGIXX MEDIA LLC" alt="DIGITALOGIXX MEDIA LLC"></div>
        <div class="slide"><img src="client-3.png" title="Decorators" alt="Decorators"></div>
-       <div class="slide"><img src="client-2.png" title="DIGITALOGIXX MEDIA LLC" alt="DIGITALOGIXX MEDIA LLC"></div>
+       <div class="slide"><img src="client-4.png" title="Well Wisher Organics" alt="Well Wisher Organics"></div>
       <div class="slide"><img src="client-1.png" title="Kapoor Commodities Exim Pvt. Ltd" alt="Kapoor Commodities Exim Pvt. Ltd"></div>
       <div class="slide"><img src="client-2.png" title="DIGITALOGIXX MEDIA LLC" alt="DIGITALOGIXX MEDIA LLC"></div>
        <div class="slide"><img src="client-1.png" title="Kapoor Commodities Exim Pvt. Ltd" alt="Kapoor Commodities Exim Pvt. Ltd"></div>
@@ -319,13 +319,38 @@ $(selector).on('click', function(){
     });
 });
   </script>
-  <script type="text/javascript">
-    $.ajax({
-    url: "https://formspree.io/FORM_ID",
-    method: "POST",
-    data: {message: "hello!"},
-    dataType: "json"
-});
-  </script>
+  <script>
+  var form = document.forms["contact"];
+  form.addEventListener('submit',contact_submit,false);
+
+  function contact_submit(e) {
+    // Stop Form From Submitting
+    e.preventDefault();
+
+    // Set Initial Variables
+    var target = e.target || e.srcElement;
+    var to = 'decentweblab@gmail.com';
+    var uri = 'mailto:' + to;
+    var body = '';
+
+    // Set Form Values to Variables
+    var name = target.elements['name'].value;
+    var subject = target.elements['subject'].value;
+    var phone = target.elements['phone'].value;
+    var message = target.elements['message'].value;
+
+    // Build Body / Message with all Input Fields
+    body += message + "\r\n\r\n";
+    body += "Name: " + name + "\r\n";
+    body += "Phone Number: " + phone + "\r\n";
+
+    // Build final Mailto URI
+    uri += '?subject=' + encodeURIComponent(subject);
+    uri += '&body=' + encodeURIComponent(body);
+
+    // Open Mailto in New Window / Tab
+    window.open(uri,'_blank');
+  }
+</script>
 </body>
 </html>
