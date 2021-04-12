@@ -15,6 +15,20 @@
 <link href="responsive.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,700i,800,800i,900&display=swap" rel="stylesheet">
+      <style>
+    label.error {
+    color: red;
+    font-weight: 100;
+    font-size: 12px;
+    float: left;
+}
+#boxes #dialog {
+    width: 450px;
+    max-height: 530px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+</style>
 </head>
 <body>
     <div class="top-header">
@@ -38,11 +52,11 @@
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
  
    <ul class="menu">
-    <li class="fill-down"><a href="index.html">Home</a></li>
-    <li class="fill-down"><a href="about-us.html">About Us</a></li>
-    <li class="fill-down"><a href="services.html">Services</a></li>
-    <li class="fill-down"><a href="portfolio.html">Portfolio</a></li>
-    <li class="fill-down active"><a href="contact-us.html">Contact Us</a></li>
+  <li class="fill-down active"><a href="https://decentweblab.github.io">Home</a></li>
+    <li class="fill-down"><a href="https://decentweblab.github.io/about-us.html">About Us</a></li>
+    <li class="fill-down"><a href="https://decentweblab.github.io/services.html">Services</a></li>
+    <li class="fill-down"><a href="https://decentweblab.github.io/portfolio.html">Portfolio</a></li>
+    <li class="fill-down"><a href="http://wellwisherorganics.com/dwl-contact/contact-us.html">Contact Us</a></li>
   </ul>
 </div>
 </header>
@@ -63,19 +77,41 @@
           <div class="col-md-6">
                 <div class="sec2contactform">
             <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
-             <form name="contact" method="post" id="contact_form">
-              <div class="clearfix">
-                <input class="col2 first" type="text" placeholder="Name" name="name">
-                <input  class="col2 last" type="Email" placeholder="Email" name="_replyto">
-              </div>
-              <div class="clearfix">
-                
-                <input type="text" placeholder="Contact Number" name="phone">
-              </div>
-              <div class="clearfix">
-                <textarea name="textarea" id="" cols="30" rows="7" name="message">Your message here...</textarea>
-              </div>
-              <div class="clearfix"><input type="submit" name="send" value="Send"></div>
+                <form action="email.php" id="contact-form" name="contact-form"  method="post" role="form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <label for="name" class="">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control contact-input" placeholder="Name" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <label for="email" class="">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-control contact-input" placeholder="Email" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                          <label for="phone" class="">Your Mobile</label>
+                            <input type="text" id="phone" name="phone" class="form-control contact-input" placeholder="Mobile" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" minlength="10" maxlength="12" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                          <label for="message">Your Message</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control contact-input md-textarea" placeholder="Message" required=""></textarea>
+                        </div>
+                    </div>
+                </div>
+                 <div class="text-center">
+                <!-- <a class="contact-send" onclick="#" href="#">Send</a> -->
+                <input type="submit" class="contact-send" value="Send Mail" name="contact_us">
+            </div>
             </form>
           </div>
           </div>
@@ -136,14 +172,14 @@ We believe in unconditional convincing that helps you see through our fair and h
                          <div class="footer-group">
                             <h3>Our Services</h3>
                             <ul>
-                                <li><a href="services.html">Ecommerce Website</a></li>
-                                 <li><a href="services.html">Restaurant Website</a></li>
-                                  <li><a href="services.html">Education Website</a></li>
-                                    <li><a href="services.html">Medical Website</a></li>
-                                     <li><a href="services.html">Construction Website</a></li>
-                                          <li><a href="services.html"> Tours and Travels Website</a></li>
-                                     <li><a href="services.html">Jewelry Website</a></li>
-                                      <li><a href="services.html">Many More..</a></li>
+                                <li><a href="https://decentweblab.github.io/services.html">Ecommerce Website</a></li>
+                                 <li><a href="https://decentweblab.github.io/services.html">Restaurant Website</a></li>
+                                  <li><a href="https://decentweblab.github.io/services.html">Education Website</a></li>
+                                    <li><a href="https://decentweblab.github.io/services.html">Medical Website</a></li>
+                                     <li><a href="https://decentweblab.github.io/services.html">Construction Website</a></li>
+                                          <li><a href="https://decentweblab.github.io/services.html"> Tours and Travels Website</a></li>
+                                     <li><a href="https://decentweblab.github.io/services.html">Jewelry Website</a></li>
+                                      <li><a href="https://decentweblab.github.io/services.html">Many More..</a></li>
                             </ul>
                          </div>
                     </div>
@@ -151,13 +187,13 @@ We believe in unconditional convincing that helps you see through our fair and h
                          <div class="footer-group">
                             <h3>Quick links</h3>
                             <ul>
-                                <li><a href="about-us.html">Why Choose Us</a></li>
-                                 <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="https://decentweblab.github.io/about-us.html">Why Choose Us</a></li>
+                                 <li><a href="https://decentweblab.github.io/portfolio.html">Portfolio</a></li>
                                   <li><a href="#">Terms & Conditions</a></li>
                                    <li><a href="#">Disclaimer</a></li>
                                     <li><a href="#">Faq</a></li>
                                      <li><a href="#">Recuitment</a></li>
-                                      <li><a href="services.html">Services</a></li>
+                                      <li><a href="https://decentweblab.github.io/services.html">Services</a></li>
                             </ul>
                          </div>
                     </div>
@@ -319,38 +355,20 @@ $(selector).on('click', function(){
     });
 });
   </script>
-  <script>
-  var form = document.forms["contact"];
-  form.addEventListener('submit',contact_submit,false);
-
-  function contact_submit(e) {
-    // Stop Form From Submitting
-    e.preventDefault();
-
-    // Set Initial Variables
-    var target = e.target || e.srcElement;
-    var to = 'decentweblab@gmail.com';
-    var uri = 'mailto:' + to;
-    var body = '';
-
-    // Set Form Values to Variables
-    var name = target.elements['name'].value;
-    var subject = target.elements['subject'].value;
-    var phone = target.elements['phone'].value;
-    var message = target.elements['message'].value;
-
-    // Build Body / Message with all Input Fields
-    body += message + "\r\n\r\n";
-    body += "Name: " + name + "\r\n";
-    body += "Phone Number: " + phone + "\r\n";
-
-    // Build final Mailto URI
-    uri += '?subject=' + encodeURIComponent(subject);
-    uri += '&body=' + encodeURIComponent(body);
-
-    // Open Mailto in New Window / Tab
-    window.open(uri,'_blank');
-  }
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+<script>
+  $("#contact-form").validate({
+      rules:{},
+      messages:{
+          name:{required:"Enter Your Name"},
+           email:{required:"Enter Your Email Id"},
+            phone:{required:"Enter Your Phone No"},
+            location:{required:"Enter Your Location"},
+            price_range:{required:"Select Budget"},
+             message:{required:"Enter Your Message"},
+              room_type:{required:"Select Room Type"},
+      }
+  });
 </script>
 </body>
 </html>
