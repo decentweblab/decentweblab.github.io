@@ -1,0 +1,169 @@
+
+@media only screen and (min-width:768px) {
+	.table-responsive {
+		display: inline-table !important;
+	}
+	.mob-why-choose {
+		display: none;
+	}
+}
+@media only screen and (max-width:767px) {
+	.header li a {
+    padding: 10px 10px;
+}
+.contact-area .contact-items {
+    padding: 15px;
+}
+.contact-area .contact-items .left-item i {
+    font-size: 30px;
+}
+.contact-items .left-item .item {
+    display: block !important;
+    text-align: center;
+}
+.contact-area .contact-items .right-item {
+    padding-left: 15px;
+    border-left: none;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+.contact-area .contact-items .left-item i {
+    display: inline-block;
+    margin-right: 0;
+}
+.info h5 {
+    font-size: 18px;
+}
+.right-item h2 {
+    font-size: 22px;
+}
+.right-item h5 {
+    font-size: 18px;
+}
+.contact-area .contact-send {
+  padding: 12px 20px !important;
+    font-weight: normal;
+}
+.header {
+    background-image: linear-gradient(45deg, #ffffff 30%, #a4abfb 30%);
+}
+.top-header {
+    display: none;
+}
+.section-title h2 {
+    font-size: 26px;
+}
+.whu-img {
+    margin-bottom: 70px;
+}
+.screen {
+	margin-bottom: 30px;
+}
+.portfolio {
+    margin-bottom: 0;
+}
+.wh-c-con {
+	display: none;
+}
+.mob-why-choose ul li {
+width: auto;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+    background: #f9f9f9;
+    padding: 17px;
+    box-shadow: 0 15px 38px 0 rgba(0,0,0,0.1);
+}
+.mob-why-con h3 {
+	    font-size: 19px;
+    margin: 8px 0px;
+}
+.mobile_button {
+    display: block;
+}
+.mobile_button ul {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.mobile_button ul li {
+    float: left;
+    display: inline-block;
+       background: #515ff9;
+    width: 25%;
+    text-align: center;
+    margin: auto;
+}
+.mobile_button ul li a {
+    line-height: 1.8;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+}
+.mob-email {
+    background: #ec2f41 !important;
+}
+.mob-whatsapp {
+    background: #25d366 !important;
+}
+.mob-sms {
+   background: #011b2d !important;
+}
+.copyrights {
+    margin-bottom: 30px;
+}
+#button {
+    bottom: 90px;
+    right: 10px;
+}
+.inner-banner {
+    height: 190px;
+}
+.inner-content {
+    padding: 7px 0;
+    top: 40px;
+}
+.inner-content h2 {
+    font-size: 25px;
+}
+.inner-content p {
+    font-size: 15px;
+}
+.mob-why-img img {
+    width: 100%;
+}
+.screen .kapoor-pfm {
+    bottom: -425px;
+}
+.screen .digital-pfm {
+    bottom: -625px;
+}
+.screen .furniture-pfm {
+    bottom: -880px;
+}
+}
+
+
+@media only screen and (max-width:500px) {
+	.wh-c-con ul li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.service-head li {
+    padding: 10px 7px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 2px 1px;
+}
+.footer-introduction img {
+    width: 80%;
+}
+.ab-content h1 {
+        font-size: 18px;
+}
+.about-section {
+    padding: 10px;
+}
+}
