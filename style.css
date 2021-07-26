@@ -79,6 +79,7 @@ ul {
 .about-section {
     background: #3745e2;
     padding: 20px;
+    display: none;
 }
 .inner-content-body {
     position: relative;
