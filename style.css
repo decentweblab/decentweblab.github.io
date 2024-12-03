@@ -456,6 +456,9 @@ cursor: pointer;
     color: #fff;
     line-height: 2;
 }
+.nav-contact ul li a {
+    color: #fff;
+}
 .logo img {
      width: 200px;
 }
